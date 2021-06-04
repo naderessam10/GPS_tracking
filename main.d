@@ -1,0 +1,9 @@
+.\main.o: main.c
+.\main.o: lcd.h
+.\main.o: std_types.h
+.\main.o: common_macros.h
+.\main.o: delay.h
+.\main.o: common_macros.h
+.\main.o: tm4c123gh6pm.h
+.\main.o: button_led.h
+.\main.o: gps.h
