@@ -12,27 +12,27 @@ volatile uint8_t button_flag=0;
 int main()
 	{
 button_led_init();	
-//LCD_init();	
-//LCD_displayStringRowColumn(0,0,"The Distance =");		
+LCD_init();	
+	
 
-		
-	while(1)
+while(1)
 {
 	
 	
 if(button_is_pressed()){button_flag=1;}
 if(button_flag==1)
 {
-uint32_t i;
-volatile int distance;	
-for(i=2;i<12;i++)
-{
-distance=distance_calc(i,i,startLongitude,startLatitude);
-LCD_intgerToString(distance,1,0);
 
+
+LCD_intgerToString(20,0,7);
 _delay_sec(2);
-}
 
+LCD_intgerToString(19,0,7);
+_delay_sec(2);
+	
+LCD_intgerToString(18,0,7);
+_delay_sec(2);
+	
 led_on(1);
 	
 
