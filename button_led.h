@@ -8,7 +8,7 @@
 
 
 
-void button_led_Init(void);
+void button_led_init(void);
 void led_off(volatile uint8_t led);
 void led_on(volatile uint8_t led);
 bool button_is_pressed(void);
